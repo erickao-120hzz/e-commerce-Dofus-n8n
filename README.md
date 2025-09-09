@@ -1,7 +1,9 @@
-# E-commerce Dofus 3.0 com Automação (N8n)
+# E-commerce Dofus 3.0 com Automação (N8n) - Autoral
 
 **Descrição**  
-Projeto autoral inspirado no universo de Dofus (Edição Física: Heróis do Mundo dos Doze). Um e-commerce funcional de classes do jogo, construído com HTML, CSS e JavaScript, e automatizado com N8n para funcionalidades como API de frete.  
+Projeto autoral inspirado no universo de Dofus (Edição Física: Heróis do Mundo dos Doze). Um e-commerce funcional de classes do jogo, construído com HTML, CSS e JavaScript, e automatizado com N8n para funcionalidades como API de frete. 
+
+Link do projeto: (https://erickao-120hzz.github.io/e-commerce-Dofus-n8n/)
 
 ---
 
@@ -78,8 +80,6 @@ GitHub: erickao-120hzz
 E-mail: (erickcarvalho661@hotmail.com)
 
 LinkedIn: (https://www.linkedin.com/in/erick-carvalho-394860243/)
-
-Projeto vinculado à DevQuest FullStack — conteúdo focado em projetos reais, React, Node e portfólio.
 
 ---
 

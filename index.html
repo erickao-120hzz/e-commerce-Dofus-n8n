@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce de Classes do Dofus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/modal-carrinho.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="header-conteudo">
+            <div class="header-esquerda">
+
+                <button class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a class="logo" href="/">
+                    <img src="./assets/images/erick_dev_logo.svg" alt="Erickzdv">
+                </a>
+            </div>
+            <nav class="menu-principal">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="sobre">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                    </li>
+
+                    <li>
+                        <a href="#faq">Perguntas Frequentes</a>
+                    </li>
+
+                    <li>
+                        <a href="#contato">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="botao-carrinho">
+                <img src="./assets/images/icone_carrinho.svg" alt="carrinho de compras">
+                <span id="contador-carrinho">0</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="produtos">
+            <h2> Edição Física: Heróis do Mundo dos Doze</h2>
+            <ul>
+                <li class="produto" data-id="cra-arqueiro">
+                    <figure>
+                        <img src="./assets/images/cra.jpg" alt="Cra - Arqueiro">
+                        <figcaption class="nome">O ALCANCE DO CRA - ARQUEIRO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Cras são arqueiros tão orgulhosos quanto precisos! Eles são aliados preciosos contra os
+                            adeptos do combate corpo a corpo. À distância, eles disparam suas flechas em qualquer
+                            orifício desprotegido e nunca dão trégua aos inimigos!
+                        </span>
+                        <span class="preco">R$ 198,99</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="eca-apostador">
+                    <figure>
+                        <img src="./assets/images/ecaflip.jpg" alt="Ecaflip - Apostador">
+                        <figcaption class="nome">A MOEDA DO ECAFLIP - APOSTADOR</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Ecaflips são guerreiros apostadores que vivem enfiados em lugares onde é possível
+                            ganhar uma grana preta e perder tudo... Um bom Ecaflip joga sem parar e sempre aposta no
+                            tudo ou nada. Mas tenha cuidado: eles levam o jogo muito a sério e podem até arriscar a vida
+                            em um arremesso de dados para tentar ganhar uma aposta...
+                        </span>
+                        <span class="preco">R$ 182,90</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="eni-curandeiro">
+                    <figure>
+                        <img src="./assets/images/eniripsa.jpg" alt="Eniripsa - Curandeiro">
+                        <figcaption class="nome">AS MÃOS DO ENIRIPSA - CURANDEIRO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Eniripsas são curandeiros capazes de curar com uma simples palavra. Eles usam o poder
+                            das palavras para aliviar o sofrimento dos seus aliados, mas também para ferir seus
+                            inimigos. Alguns Eniripsas até se tornaram caçadores de palavras e exploradores de idiomas
+                            esquecidos.
+                        </span>
+                        <span class="preco">R$ 99,13</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="enu-caçador">
+                    <figure>
+                        <img src="./assets/images/enutrof.jpg" alt="Enutrof - Caçador de Tesouros">
+                        <figcaption class="nome">OS DEDOS DE ENUTROF - CAÇADOR DE TESOUROS</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Enutrofs são caçadores de tesouro loucos por kamas. Apesar da idade avançada, são
+                            capazes de correr como um bando de Dragoperus quando veem um cofre recheado. São
+                            especialistas na arte de desacelerar os inimigos. Assim, podem atormentá-los bastante antes
+                            de atacá-los com golpes de pá quando chega a hora!
+                        </span>
+                        <span class="preco">R$ 174,00</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="feca-protetor">
+                    <figure>
+                        <img src="./assets/images/feca.jpg" alt="Feca - Protetor">
+                        <figcaption class="nome">O ESCUDO DO FECA - PROTETOR</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Fecas são protetores leais e ficam sempre na defensiva. Eles são muito apreciados pelos
+                            grupos de aventureiros graças às suas armaduras elementares capazes de suportar até mesmo os
+                            golpes mais fortes. São também mestres na arte dos símbolos mágicos: ao primeiro sinal de
+                            briga, os Fecas já sacam seus glifos!
+                        </span>
+                        <span class="preco">R$ 89,99</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="forjalança-campeão">
+                    <figure>
+                        <img src="./assets/images/forjalancas.jpg" alt="Forja - Campeão Imortal">
+                        <figcaption class="nome">HERANÇA DOS FORJALANÇAS - CAMPEÃO IMORTAL</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Forjalanças são lanceiros que só acreditam neles mesmos! Tirando seus poderes da Lança
+                            Original, esses combatentes querem forjar uma reputação que nem mesmo a morte seria capaz de
+                            apagar. Amantes das artes, das histórias lendárias e das justas épicas, promessas de glória
+                            e de posteridade bastam para convencer um Forjalança a erguer suas armas ao seu lado.
+                            Verdadeiros pontas de lança dos combates, eles partem na frente para furar as defesas
+                            adversárias.
+                        </span>
+                        <span class="preco">R$ 61,00</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="hupper-mago">
+                    <figure>
+                        <img src="./assets/images/huppermago.jpg" alt="Huppermago - Mago elementalista">
+                        <figcaption class="nome">A RUNA DO HUPPERMAGO - MAGO ELEMENTALISTA</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Huppermagos são capazes de combinar o fogo, o ar, a água e a terra para lançar feitiços
+                            com múltiplos efeitos. Mestres das runas elementares, eles veneram a Balança Krósmica, uma
+                            força misteriosa que mantém o equilíbrio no universo.
+                        </span>
+                        <span class="preco">R$ 55,15</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="iop-guerreiro">
+                    <figure>
+                        <img src="./assets/images/iop.jpg" alt="Iop - Guerreiro temerário">
+                        <figcaption class="nome">O CORAÇÃO DO IOP - GUERREIRO TEMERÁRIO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Iops são guerreiros intrépidos e temerários! Uma coisa é certa: os Iops sabem usar suas
+                            armas como ninguém. Para eles, entrar em uma briga ao menos uma vez por dia é sinal de boa
+                            saúde. Seu temperamento impetuoso os transforma em paladinos do extremo, capazes de realizar
+                            coisas maravilhosas... mas também coisas terríveis!
+                        </span>
+                        <span class="preco">R$ 298,00</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="kilorf-barbaro">
+                    <figure>
+                        <img src="./assets/images/kilorf.jpg" alt="Kilorf - Bárbaro">
+                        <figcaption class="nome">RAIVA DE KILORF - BÁRBARO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Quando se é um bárbaro com uma personalidade de Awaw, é preciso saber mostrar os dentes
+                            para ganhar respeito. Olhar altivo, pelo brilhante, focinho úmido: é assim que o Kilorf
+                            atravessa os obstáculos e triunfa em meio às adversidades. Perseguir suas presas sem trégua,
+                            explodir de raiva para esmagar seus inimigos, vê-los morrerem na sua frente e ouvir os
+                            miados aterrorizados de seus Miaws... Uma vida digna de ser vivida!
+                        </span>
+                        <span class="preco">R$ 83,14</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="ladino-especialista">
+                    <figure>
+                        <img src="./assets/images/ladino.jpg" alt="Ladino - Especialista em explosivos">
+                        <figcaption class="nome">A ASTÚCIA DO LADINO - ESPECIALISTA EM EXPLOSIVOS</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Ladinos são grandes especialistas em explosivos! Todo mundo sabe que ele manejam a
+                            pólvora como ninguém e não pensam duas vezes antes de mandar seus inimigos pelos ares. Se
+                            algum dia, ao passar por um terreno minado, você notar algumas faíscas, pode ter certeza de
+                            que há um Ladino por perto!
+                        </span>
+                        <span class="preco">R$ 100,00</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="osa-invocador">
+                    <figure>
+                        <img src="./assets/images/osamodas.jpg" alt="Osamodas - Invocador">
+                        <figcaption class="nome">O CHICOTE DO OSAMODAS - INVOCADOR DE CRIATURAS</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Osamodas são domadores natos! Eles têm o poder de invocar criaturas e são ótimos
+                            adestradores. Dizem por aí que eles fazem suas roupas com a pele de seus inimigos, mas
+                            ninguém tem coragem de perguntar se é verdade... Se for seu aliado, o Osamodas será muito
+                            atencioso com você. Caso contrário, você pode acabar virando um par de botas ou um gorro
+                            forrado.
+                        </span>
+                        <span class="preco">R$ 124,99</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="pandawa-encrenqueiro">
+                    <figure>
+                        <img src="./assets/images/pandawa.jpg" alt="Pandawa - Encrenqueiro">
+                        <figcaption class="nome">A GARRAFA DO PANDAWA - ENCRENQUEIRO SEDENTO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Pandawas são guerreiros adeptos das artes marciais, capazes de fazer loucuras com seus
+                            corpos! E até com os corpos dos outros... O Pandawa não pensa duas vezes antes de proteger
+                            seus aliados, podendo até carregá-los nos ombros se necessário. Quanto aos seus inimigos,
+                            ele os arremessam sem dó nem piedade antes de comemorar a vitória com uma boa garrafa de
+                            leite de bambu!
+                        </span>
+                        <span class="preco">R$ 165,50</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="sacrier-ber">
+                    <figure>
+                        <img src="./assets/images/sacrier.jpg" alt="Sacrier - Berserker">
+                        <figcaption class="nome">O SANGUE DO SACRIER - BERSERKER</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Sacriers são berserkers capazes de multiplicar sua força cada vez que são atacados!
+                            Como não têm medo de receber golpes nem de se expor ao perigo, eles costumam ficar na linha
+                            de frente, prontos para derramar o sangue dos inimigos! O Sacrier é sem dúvidas o
+                            companheiro ideal para as suas longas noites de batalha...
+                        </span>
+                        <span class="preco">R$ 205,00</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="sadida-feit">
+                    <figure>
+                        <img src="./assets/images/sadida.jpg" alt="Sadida - Feiticeiro">
+                        <figcaption class="nome">O SAPATO DO SADIDA - FEITICEIRO SILVESTRE</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Sadidas são invocadores que envenenam a vida de seus inimigos! Eles domam as sarças
+                            para transformá-las em armas terríveis, confeccionam bonecas de guerra e de cura... Esta é a
+                            vida de um verdadeiro Sadida.
+                        </span>
+                        <span class="preco">R$ 199,99</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="sram-assas">
+                    <figure>
+                        <img src="./assets/images/sram.jpg" alt="Sram - Assassino">
+                        <figcaption class="nome">A SOMBRA DO SRAM - ASSASSINO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Srams são assassinos que amam bolsas, principalmente se estiverem cheias de kamas.
+                            Levantar a barra de uma túnica, tatear o fundo de um bolso, utilizar seus dedos ligeiros e
+                            finalmente apalpar as joias tão desejadas antes de colocar uma armadilha mortal... Estas são
+                            as atividades preferidas dos discípulos de Sram!
+                        </span>
+                        <span class="preco">R$ 241,00</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="steamer-estra">
+                    <figure>
+                        <img src="./assets/images/steamer.jpg" alt="Steamer - Estrategista">
+                        <figcaption class="nome">O VAPOR DO STEAMER - ESTRATEGISTA TECNOMAGO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Steamers sentem-se em casa tanto debaixo d'água quanto no campo de batalha. Arpoadores,
+                            guardiões, mestres dos movimentos no terreno: as habilidades destes exploradores das
+                            profundezas são vastas como o oceano Suas torres tecnomágicas bombardeiam todos aqueles que
+                            passam ao seu alcance, sejam amigos ou inimigos. Cuidado para não acabar se afogando em um
+                            mar de tecnomagia!
+                        </span>
+                        <span class="preco">R$ 189,99</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="xelor-mes">
+                    <figure>
+                        <img src="./assets/images/xelor.jpg" alt="Xelor - Mestre">
+                        <figcaption class="nome">A AMPULHETA DO XELOR - MESTRE DO TEMPO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Xelores são magos que controlam o tempo e todos os mecanismos que mostram a hora:
+                            carrilhões, relógios e pêndulos obedecem-lhes sem demora. Os Xelores brincam com o tempo
+                            para desacelerar um inimigo ou se teletransportar para onde bem entenderem.
+                        </span>
+                        <span class="preco">R$ 300,00</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+
+                <li class="produto" data-id="zobal-guerreiro">
+                    <figure>
+                        <img src="./assets/images/zobal.jpg" alt="Zobal - Guerreiro lunático">
+                        <figcaption class="nome">A MÁSCARA DO ZOBAL - GUERREIRO LUNÁTICO</figcaption>
+                    </figure>
+                    <div class="informacoes">
+                        <span>Os Xelores são magos que controlam o tempo e todos os mecanismos que mostram a hora:
+                            carrilhões, relógios e pêndulos obedecem-lhes sem demora. Os Xelores brincam com o tempo
+                            para desacelerar um inimigo ou se teletransportar para onde bem entenderem.
+                        </span>
+                        <span class="preco">R$ 280,00</span>
+                        <button class="add-ao-carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="container">
+            <nav>
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#perguntas-frequentes">Perguntas Frequentes</a></li>
+                    <li><a href="#fale-conosco">Fale Conosco</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="trocas">Trocas e Devoluções</a></li>
+                    <li><a href="#termos">Termos e Condições</a></li>
+                    <li><a href="#politica">Política de Privacidade</a></li>
+                    <li><a href="#padrao">Padrão de Qualidade</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>Endereço</h3>
+                <ul>
+                    <li><a href="#">Rua Mundo dos doze</a></li>
+                    <li>Bosnia and Herzegovina</li>
+                    <li>Federation of Bosnia and Herzego</li>
+                    <li><a href="#">(11) 932288280</a></li>
+                    <li><a href="#">erickcarvalho661@hotmail.com</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="copyright">
+            <p>@2025 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+
+    <div id="modal-1" class="modal" aria-hidden="true">
+
+        <div tabindex="-1" data-micromodal-close>
+            <div class="container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+
+                <header>
+                    <h2 id="modal-1-title">Carrinho de compras</h2>
+
+                    <button class="fechar" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+
+                <div id="modal-1-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="th-produto">Produto</th>
+                                <th>Descrição</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th class="th-total">Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/cra.jpg" alt="Cra - Arqueiro"></td>
+                                <td>O ALCANCE DO CRA - ARQUEIRO</td>
+                                <td class="td-preco-unitario">R$ 198,99</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 198,99</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/ecaflip.jpg" alt="Ecaflip - Apostador">
+                                </td>
+                                <td>A MOEDA DO ECAFLIP - APOSTADOR</td>
+                                <td class="td-preco-unitario">R$ 182,90</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 182,90</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/eniripsa.jpg"
+                                        alt="Eniripsa - Curandeiro"></td>
+                                <td>AS MÃOS DO ENIRIPSA - CURANDEIRO</td>
+                                <td class="td-preco-unitario">R$ 99,13</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 99,13</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/enutrof.jpg"
+                                        alt="Enutrof - Caçadpr de Tesouros"></td>
+                                <td>OS DEDOS DE ENUTROF - CAÇADOR DE TESOUROS</td>
+                                <td class="td-preco-unitario">R$ 174,00</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 174,00</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/feca.jpg" alt="Feca - Protetor"></td>
+                                <td>O ESCUDO DO FECA - PROTETOR</td>
+                                <td class="td-preco-unitario">R$ 89,99</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">89,99</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/forjalancas.jpg"
+                                        alt="Forja - Campeão Imortal"></td>
+                                <td>HERANÇA DPS FORJALANÇAS - CAMPEÃO IMORTAL</td>
+                                <td class="td-preco-unitario">R$ 61,00</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 61,00</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/huppermago.jpg"
+                                        alt="Huppermago - Mago elementalista">
+                                </td>
+                                <td>A RUNA DO HUPPERMAGO - MAGO ELEMENTALISTA</td>
+                                <td class="td-preco-unitario">R$ 55,15</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 55,15</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/iop.jpg"
+                                        alt="Iop - Guerreiro temerário"></td>
+                                <td>O CORAÇÃO DO IOP - GUERREIRO TEMERÁRIO</td>
+                                <td class="td-preco-unitario">R$ 298,00</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 298,00</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/kilorf.jpg" alt="Kilorf - Bárbaro">
+                                </td>
+                                <td>RAIVA DE KILORF - BÁRBARO</td>
+                                <td class="td-preco-unitario">R$ 83,14</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 83,14</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/ladino.jpg"
+                                        alt="Ladino - Especialista em explosivos">
+                                </td>
+                                <td>A ASTÚCIA DO LADINO - ESPECIALISTA EM EXPLOSIVOS</td>
+                                <td class="td-preco-unitario">R$ 100,00</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 100,00</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/osamodas.jpg"
+                                        alt="Osamodas - Ivocador"></td>
+                                <td>O CHICOTE DO OSAMODAS - INVOCADOR DE CRIATURAS</td>
+                                <td class="td-preco-unitario">R$ 124,99</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 124,99</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/pandawa.jpg"
+                                        alt="Pandawa - Encrenqueiro"></td>
+                                <td>A GARRAFA DO PANDAWA - ENCRENQUEIRO CLANDESTINO</td>
+                                <td class="td-preco-unitario">R$ 165,50</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 165,50 </td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/sacrier.jpg" alt="Sacrier - Berserker">
+                                </td>
+                                <td>O SANGUE DO SACRIER - BERSERKER</td>
+                                <td class="td-preco-unitario">R$ 205,00</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 205,00</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/sadida.jpg" alt="Sadida - Feiticeiro">
+                                </td>
+                                <td>O SAPATO DO SADIDA - FEITICEIRO SILVESTRE</td>
+                                <td class="td-preco-unitario">R$ 199,99</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 199,99</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/sram.jpg" alt="Sram - Assassino"></td>
+                                <td>A SOMBRA DO SRAM - ASSASSINO</td>
+                                <td class="td-preco-unitario">R$ 241,00</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 241,00</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/steamer.jpg"
+                                        alt="Steamer - Estrategista"></td>
+                                <td>O VAPOR DO STEAMER - ESTRATEGISTA TECNOMAGO</td>
+                                <td class="td-preco-unitario">R$ 189,99</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 189,99</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/xelor.jpg" alt="Xelor - Mestre"></td>
+                                <td>A AMPULHETA DO XELOR - MESTRE DO TEMPO</td>
+                                <td class="td-preco-unitario">R$ 300,00</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 300,00</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+
+                            <tr>
+                                <td class="td-produto"><img src="./assets/images/zobal.jpg"
+                                        alt="Zobal - Guerreiro lunático"></td>
+                                <td>A MÁSCARA DO ZOBAL - GUERREIRO LUNÁTICO</td>
+                                <td class="td-preco-unitario">R$ 280,00</td>
+                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
+                                <td class="td-preco-total">R$ 280,00</td>
+                                <td><button class="btn-remover" id="deletar"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="container-preco">
+                        <div class="container-cep-frete">
+                            <label for="cep">Calcular Frete:</label>
+                            <div class="container-cep-inputs">
+                                <input type="text" id="input-cep" placeholder="Digite seu CEP"
+                                    value="08411100" />
+                                    <span class="erro"></span><button id="btn-calcular-frete">Calcular Frete</button>
+                            </div>
+                        </div>
+
+                        <div class="container-preco-total">
+                            <span id="subtotal-pedidos">Subtotal dos pedidos: <span class="valor">R$ 0,00</span>
+                            </span>
+                            <span id="valor-frete">Valor do Frete: <span>R$ 0,00</span></span>
+                            <span class="total-carrinho" id="total-carrinho">Total: R$ 1200,00</span>
+                        </div>
+
+                        <button class="finalizar-compra">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
+"></script>
+
+    <script type="module" src="./js/services/carrinhoServices.js"></script>
+    <script type="module" src="./js/services/freteServices.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/carrinho.js"></script>
+    <script src="./js/menu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+/* Barra de rolagem personalizada para o modal do carrinho */
+.modal::-webkit-scrollbar,
+.modal .container::-webkit-scrollbar {
+  width: 10px;
+  background: #1a1a2e;
+}
+
+.modal::-webkit-scrollbar-thumb,
+.modal .container::-webkit-scrollbar-thumb {
+  background: #6528D3;
+  border-radius: 8px;
+  border: 2px solid #1a1a2e;
+}
+
+.modal::-webkit-scrollbar-track,
+.modal .container::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+  z-index: 9999;
+}
+
+
+.modal.is-open {
+  display: block;
+}
+
+
+
+.modal .container {
+  background-color: var(--cor-neutra-escura);
+  color: var(--cor-neutra-clara);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.2rem;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+
+.modal header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+
+.modal header h2 {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+
+.modal header .fechar {
+  background-image: url(../assets/images/icone_fechar.svg);
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.th-produto,
+.th-total,
+.td-produto,
+.td-preco-total {
+  display: none;
+}
+
+
+tbody td {
+  padding: 0.8rem;
+  vertical-align: middle;
+  background-color: var(--cor-cinza-escura);
+  color: var(--cor-roxa-clara);
+  letter-spacing: 0.1rem;
+}
+
+
+thead th {
+  padding: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+
+td.td-preco-unitario {
+  color: var(--cor-neutra-clara);
+  font-size: 0.9rem;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+
+td.td-quantidade input {
+  width: 48px;
+  padding: 4px;
+  background-color: transparent;
+  border: 1px solid var(--cor-primaria);
+  border-radius: 4px;
+  color: var(--cor-cinza-clara);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+td .btn-remover {
+  display: block;
+  background-image: url(../assets/images/icone_deletar.svg);
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: auto;
+}
+
+
+.container-preco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+
+.total-carrinho {
+  background-color: var(--cor-cinza-escura);
+  width: 100%;
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.finalizar-compra {
+  color: var(--cor-neutra-clara);
+  background-color: var(--cor-primaria);
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.finalizar-compra:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+.container-preco-total {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 16px;
+  font-size: 1rem;
+}
+
+#subtotal-pedidos,
+#valor-frete {
+  color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#valor-frete {
+  display: flex;
+}
+
+
+
+#subtotal-pedidos,
+#valor-frete {
+  background-color: var(--cor-primaria);
+  border-radius: 6px;
+  padding: 4px 12px;
+}
+
+#subtotal-pedidos .valor,
+#valor-frete span {
+  color: #fff;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+#total-carrinho {
+  color: aqua;
+  font-size: 1.5rem;
+  ;
+  font-weight: bold;
+  margin-top: 8px;
+  display: block;
+  text-align: right;
+}
+
+#input-cep {
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 220px;
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background: transparent;
+  color: aqua;
+  font-size: 1rem;
+  font-weight: 400;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+#input-cep::placeholder {
+  color: aqua;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.erro{
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  display: none;
+}
+
+#btn-calcular-frete {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6528D3;
+  color: var(--cor-neutra-escura);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+
+#btn-calcular-frete:hover,
+#btn-calcular-frete:focus {
+  background: aqua;
+  color: #1a1a2e;
+  border: none;
+}
+
+.container-cep-frete {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  gap: 8px;
+
+}
+
+.container-cep-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+@media (min-width: 769px) {
+  .modal.is-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(00, 00, 00, 0.8);
+  }
+
+
+  .modal .container {
+    background-color: var(--cor-cinza-escura);
+    max-width: 720px;
+    height: auto;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .modal.ativo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .modal .container th {
+    background-color: var(--cor-neutra-escura);
+  }
+
+
+  table {
+    border-collapse: collapse;
+  }
+
+
+  tbody td {
+    border: 2px solid var(--cor-neutra-escura);
+  }
+
+
+  .th-produto,
+  .th-total,
+  .td-produto,
+  .td-preco-total {
+    display: table-cell;
+  }
+
+
+  .td-preco-total {
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--cor-neutra-clara);
+  }
+
+
+  td img {
+    width: 48px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+
+  .container-preco {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+
+  .total-carrinho {
+    text-align: right;
+  }
+
+
+  .finalizar-compra {
+    width: 369px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+
+
+  .td-quantidade {
+    text-align: center;
+  }
+}

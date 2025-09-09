@@ -1,0 +1,133 @@
+.cabecalho {
+    grid-area: header;
+    padding: 1.8rem 0;
+}
+
+.cabecalho .menu-principal {
+    display: none;
+    background-color: var(--cor-neutra-escura);
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+.cabecalho .menu-principal ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.cabecalho ul li a {
+    color: var(--cor-neutra-clara);
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.cabecalho ul li a:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+.cabecalho.menu-ativo .menu-principal {
+    display: block;
+}
+
+.header-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.header-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-hamburguer {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--cor-neutra-clara);
+}
+
+.botao-carrinho {
+    background-color: transparent;
+    border: 0;
+    padding: 0.75rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.botao-carrinho span {
+    background-color: var(--cor-primaria);
+    color: var(--cor-neutra-clara);
+    font-weight: 600;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 30px;
+    left: 29px;
+
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+@media(min-width: 940px) {
+    .cabecalho .menu-principal {
+        display: block;
+        position: static;
+        width: auto;
+    }
+
+    .cabecalho .menu-principal ul {
+        flex-direction: row;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .cabecalho .menu-principal ul {
+        gap: 1rem;
+    }
+
+    .cabecalho ul li a {
+        font-size: 0.85rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    .cabecalho {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .cabecalho .menu-principal ul {
+        gap: 2rem;
+    }
+
+    .cabecalho ul li a {
+        font-size: 1rem;
+    }
+}

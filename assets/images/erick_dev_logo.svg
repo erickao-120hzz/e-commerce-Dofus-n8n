@@ -1,0 +1,60 @@
+<svg width="126" height="40" viewBox="0 0 126 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente para o fundo roxo brilhante -->
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6D28D9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente para a ampulheta -->
+    <linearGradient id="hourglassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E2E8F0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente para a areia -->
+    <linearGradient id="sandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fundo roxo brilhante com bordas arredondadas -->
+  <rect width="126" height="40" rx="6" ry="6" fill="url(#purpleGradient)" />
+  
+  <!-- Ampulheta -->
+  <g transform="translate(8, 8)">
+    <!-- Corpo da ampulheta -->
+    <path d="M2 4 L10 4 L10 6 L8 8 L8 16 L10 18 L10 20 L2 20 L2 18 L4 16 L4 8 L2 6 Z" 
+          fill="url(#hourglassGradient)" 
+          stroke="#CBD5E1" 
+          stroke-width="0.5"/>
+    
+    <!-- Areia superior -->
+    <path d="M3 5 L9 5 L9 6 L7.5 7.5 L4.5 7.5 Z" 
+          fill="url(#sandGradient)"/>
+    
+    <!-- Areia inferior -->
+    <path d="M4.5 16.5 L7.5 16.5 L9 18 L9 19 L3 19 L3 18 Z" 
+          fill="url(#sandGradient)"/>
+    
+    <!-- Areia caindo (pequenos pontos) -->
+    <circle cx="6" cy="11" r="0.5" fill="#FBBF24" opacity="0.8"/>
+    <circle cx="6" cy="12.5" r="0.3" fill="#F59E0B" opacity="0.6"/>
+  </g>
+  
+  <!-- Texto ERICK DEV -->
+  <text x="32" y="26" 
+        font-family="Arial, sans-serif" 
+        font-size="14" 
+        font-weight="bold" 
+        fill="#FFFFFF" 
+        text-anchor="start">ERICK DEV</text>
+  
+  <!-- Efeito de brilho sutil -->
+  <rect width="126" height="40" rx="6" ry="6" 
+        fill="url(#purpleGradient)" 
+        opacity="0.1" 
+        style="mix-blend-mode: overlay"/>
+</svg>
